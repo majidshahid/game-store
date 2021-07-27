@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 80vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.411),rgba(0, 0, 0, 0.486)), url(1234.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.logo{
+    width: 350px ;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-bottom: 25px;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin-right: 40px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(0, 255, 21);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover ::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin:20px auto;
+    font-weight: 150;
+    line-height: 50px;
+} 
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: 2px solid rgb(0, 255, 21);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}   
+span{
+    background:rgba(0, 255, 21, 0.726) ;
+    height: 100%;
+    width: 0                ;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+    color: black;
+}
+.card{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 35px 30px;
+    box-sizing: content-box;
+    cursor: pointer;
+    margin: 40px 40px;
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    text-transform:uppercase;
+    color:rgb(255, 255, 255);
+    position: relative;
+    margin-top: 50px;
+    padding-top: 250px;
+    transition:transform 0.5s;
+}
+.card1{
+    background-image: url(call.jpg);
+}
+.card2{
+    background-image: url(pubg.jpg);
+}
+.card3{
+    background-image: url(froza.jpg);
+}
+.card4{
+    background-image: url(creed.jpg);
+}
+.card1:hover{
+    color: rgb(0, 0, 0);
+    transform: translateY(-25px);
+    background-image:linear-gradient(rgba(0, 255, 0, 0.664),rgba(0, 0, 0, 0.651)), url(call.jpg);
+}
+.card2:hover{
+    color: rgb(0, 0, 0);
+    transform: translateY(-25px);
+    background-image:linear-gradient(rgba(0, 255, 0, 0.664),rgba(0, 0, 0, 0.651)), url(pubg.jpg);
+}
+.card3:hover{
+    color: rgb(0, 0, 0);
+    transform: translateY(-25px);
+    background-image:linear-gradient(rgba(0, 255, 0, 0.664),rgba(0, 0, 0, 0.651)), url(froza.jpg);
+}
+.card4:hover{
+    color: rgb(0, 0, 0);
+    transform: translateY(-25px);
+    background-image:linear-gradient(rgba(0, 255, 0, 0.664),rgba(0, 0, 0, 0.651)), url(creed.jpg);
+}
+.slide{
+    width: 110%;
+    height: 80vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.493),rgba(0, 0, 0, 0.479)), url(battel.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    animation: zoom-out 3s linear infinite;
+}
+@keyframes zoom-out{
+    100%{
+        width: 100%;
+    }
+}
+   
+.text-box{
+    width: 800px;
+    position: absolute;
+    left: 50px;
+    color: white;
+}
+.text-box h1{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.text-box p{
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px;
+    padding-top: 15px;
+    
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
